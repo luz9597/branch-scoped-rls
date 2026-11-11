@@ -224,6 +224,9 @@ alter table public.records       enable row level security;
 revoke all on public.organizations, public.memberships, public.records from anon, authenticated;
 grant select on public.organizations, public.memberships, public.records to anon, authenticated;
 grant insert, update, delete on public.records to authenticated;
+-- Server-side admin work (seeding, creating orgs, moving branches, adding
+-- members). Newer projects do not grant new tables to service_role by default.
+grant select, insert, update, delete on public.organizations, public.memberships, public.records to service_role;
 
 -- The closure table is internal. No policies, and no grants to API roles.
 revoke all on public.org_closure from anon, authenticated;
