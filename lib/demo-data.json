@@ -1,0 +1,147 @@
+{
+  "orgs": [
+    {
+      "id": "11111111-0000-0000-0000-000000000001",
+      "parentId": null,
+      "name": "Molliteum"
+    },
+    {
+      "id": "11111111-0000-0000-0000-000000000002",
+      "parentId": "11111111-0000-0000-0000-000000000001",
+      "name": "North Region"
+    },
+    {
+      "id": "11111111-0000-0000-0000-000000000004",
+      "parentId": "11111111-0000-0000-0000-000000000002",
+      "name": "Club A"
+    },
+    {
+      "id": "11111111-0000-0000-0000-000000000006",
+      "parentId": "11111111-0000-0000-0000-000000000004",
+      "name": "Team A1"
+    },
+    {
+      "id": "11111111-0000-0000-0000-000000000005",
+      "parentId": "11111111-0000-0000-0000-000000000002",
+      "name": "Club B"
+    },
+    {
+      "id": "11111111-0000-0000-0000-000000000003",
+      "parentId": "11111111-0000-0000-0000-000000000001",
+      "name": "South Region"
+    },
+    {
+      "id": "11111111-0000-0000-0000-000000000007",
+      "parentId": "11111111-0000-0000-0000-000000000003",
+      "name": "Club C"
+    },
+    {
+      "id": "11111111-0000-0000-0000-000000000008",
+      "parentId": null,
+      "name": "Other Org"
+    }
+  ],
+  "personas": [
+    {
+      "email": "olivia@rls-demo.test",
+      "name": "Olivia",
+      "where": "Molliteum, admin",
+      "memberships": [
+        {
+          "orgId": "11111111-0000-0000-0000-000000000001",
+          "rank": 1,
+          "role": "admin"
+        }
+      ]
+    },
+    {
+      "email": "nora@rls-demo.test",
+      "name": "Nora",
+      "where": "North Region, rank 1",
+      "memberships": [
+        {
+          "orgId": "11111111-0000-0000-0000-000000000002",
+          "rank": 1,
+          "role": "manager"
+        }
+      ]
+    },
+    {
+      "email": "nate@rls-demo.test",
+      "name": "Nate",
+      "where": "North Region, rank 2",
+      "memberships": [
+        {
+          "orgId": "11111111-0000-0000-0000-000000000002",
+          "rank": 2,
+          "role": "staff"
+        }
+      ]
+    },
+    {
+      "email": "alice@rls-demo.test",
+      "name": "Alice",
+      "where": "Club A",
+      "memberships": [
+        {
+          "orgId": "11111111-0000-0000-0000-000000000004",
+          "rank": 1,
+          "role": "manager"
+        }
+      ]
+    },
+    {
+      "email": "tom@rls-demo.test",
+      "name": "Tom",
+      "where": "Team A1",
+      "memberships": [
+        {
+          "orgId": "11111111-0000-0000-0000-000000000006",
+          "rank": 1,
+          "role": "member"
+        }
+      ]
+    },
+    {
+      "email": "sam@rls-demo.test",
+      "name": "Sam",
+      "where": "South Region",
+      "memberships": [
+        {
+          "orgId": "11111111-0000-0000-0000-000000000003",
+          "rank": 1,
+          "role": "manager"
+        }
+      ]
+    },
+    {
+      "email": "mia@rls-demo.test",
+      "name": "Mia",
+      "where": "Club B and Club C",
+      "memberships": [
+        {
+          "orgId": "11111111-0000-0000-0000-000000000005",
+          "rank": 5,
+          "role": "member"
+        },
+        {
+          "orgId": "11111111-0000-0000-0000-000000000007",
+          "rank": 5,
+          "role": "member"
+        }
+      ]
+    },
+    {
+      "email": "oscar@rls-demo.test",
+      "name": "Oscar",
+      "where": "Other Org, a separate tree",
+      "memberships": [
+        {
+          "orgId": "11111111-0000-0000-0000-000000000008",
+          "rank": 1,
+          "role": "admin"
+        }
+      ]
+    }
+  ]
+}
